@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <!-- DEFAULT COLORS which i'm not using right now-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="color:Background" content="#fff" />
+	<meta name="color:BodyText" content="#000" />
+	<meta name="color:HoverBackground" content="#fff" />
+	<meta name="color:HoverText" content="#00f" />
+	<!-- END DEFAULT COLORS -->
+	<meta name="verify-v1" content="9m4wDDsGk39se6ce/Zi84lvAsf0vPTQcRVTl0iJZYXE=" >
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=775"/> <!-- iPhone, may want to trash this -->
+	<!-- Header general -->
+    <title>{Title}{block:PostSummary} - {PostSummary}{/block:PostSummary}{block:SearchPage} - {lang:Search results for SearchQuery}{/block:SearchPage}</title>
+    <link rel="icon" href="{Favicon}"/>
+	<link rel="apple-touch-icon" href="{PortraitURL-48}"/>
+	
+	<!-- CSS -->
+    <style type="text/css">
+        
+        
+body{
+	background: {color:Background};
+	color: {color:BodyText};
+	font-family: Georgia, serif;
+	text-decoration: none;
+	word-spacing: 0.00em;
+	text-align: left;
+	letter-spacing: 0.00em;
+	line-height: 1.3em;
+	font-size: 14px;
+	margin: 2em 2em;
+	}
+
+	p, li
+	{
+	margin-bottom: 1em;
+	}
+   
+	h2
+	{
+		font-size: 100%;
+		text-transform: uppercase;
+		/*margin-bottom: 1em;*/
+		/*letter-spacing: .3em;*/
+	}
+   
+   
+/*    Kill the use of H2, H3, Etc. and implement my good post type tags */
+	h2 a
+	{
+		text-decoration: none;
+	}
+   
+   h3
+   {
+      font-size: 100%;
+      margin-bottom: 1em;
+   }
+   
+   blockquote, .who
+   {
+      margin-left: 2em;
+      margin-bottom: 1em;
+   }
+   
+   a
+   {
+      color: {color:BodyText};
+   }
+   
+   a:hover
+   {
+      color: {color:HoverText};
+      background:{color:HoverBackground};
+      text-decoration:none;
+   }
+   
+   ul, ol
+   {
+      margin-left: 3em;
+      margin-bottom: 1em;
+   }
+   
+   ul li
+   {
+      list-style-type: disc;
+   }
+	
+	
+	.post {
+		margin-bottom: 12em;
+	}
+	
+	.PaginationBig {
+		font-size: 3em;
+		margin-top: 1em;
+		text-transform: uppercase;
+		word-spacing: 0.00em;
+		letter-spacing: 0.00em;
+	}
+	
+	.PaginationBig a {
+		text-decoration: none;
+	}
+	
+	.plinkarrow a {
+		text-decoration: none;
+	}
+	
+	.chat {
+	margin-bottom: 1em;
+	}
+	
+	.label {
+	#fff-space: no-wrap;
+		padding-right: 1em;
+		vertical-align: top;
+	}
+	
+	.line .caption
+	{
+		padding-bottom: 1em;
+	}
+	
+	.halo{
+	max-width:960px;
+	max-height:760px;
+	}
+
+	ol.notes {
+		display: block;
+		list-style-type: none;
+		list-style-position: outside;
+		margin: none;
+		padding: none;
+		/*border-left: solid .3em {color:BodyText};*/
+    }
+
+    ol.notes li.note {
+		list-style-type: none;
+        border-top: none;
+        padding: none;
+    }
+
+    ol.notes li.note img.avatar {
+        vertical-align: -4px;
+        margin-right: none;
+        width: 16px;
+        height: 16px;
+    }
+
+    ol.notes li.note span.action {}
+
+    ol.notes li.note .answer_content {}
+
+    ol.notes li.note blockquote {
+        border-color: {color:BodyText};
+        padding: none;
+        margin: none;
+    }
+
+    ol.notes li.note blockquote a {
+        text-decoration: none;
+    }
+
+/* Style IDs here */
+
+	#Content {} /* This is the whole enchilada wrapper */
+
+	#title {
+      text-transform: uppercase;
+      margin-bottom: 3em;	
+	}
+	
+	#title a {
+	text-decoration: none;
+	}
+	
+	#sidebar {
+		position: fixed;
+		width: 13em;
+		float: left;
+		text-transform: uppercase;
+		word-spacing: 0.10em;
+		letter-spacing: 0.08em;
+	}
+	
+	#sidebar a {
+		text-decoration:none;
+	}
+	
+	#sidebar l ul {
+		margin-left: none;
+		list-style-position: outside;
+	}
+	
+	#sidebar li {
+		margin-left: none;
+		list-style-position: outside;
+		list-style-type: none;
+		text-decoration: none;
+	}
+	
+   #posts {
+		width: 520px;
+		padding-left: 22em;
+		padding-top: 4em;
+		text-align: justify;
+	}
+    
+	#footer {
+		display: box;
+		width: auto;
+		text-align:	left;
+		margin: 40px 0px 70px 0px;
+	}
+   
+   #pageperm {
+		text-align: 		left;
+		margin: 1em auto auto auto auto;
+	}
+	
+	#permalinkblock {
+		text-align: 		left;
+		margin: 3em auto auto auto;
+		padding: 1em;
+		border: solid 1px {color:BodyText};
+	}
+	
+	#permalinkblock .p {
+		position:	 		relative;
+		text-align: 		left;
+		list-style-type:	none;
+		margin-bottom: 1em;
+	}
+	
+	#permalinkblock .p ul {
+		padding: none;
+		margin: none, none, 1em, none;
+	}
+
+	#permalinkblock .p li {
+		display:		inline;
+		list-style-position: outside;
+		margin-right:	.5em;
+		text-decoration: none;
+	}
+
+   
+	
+	{CustomCSS}
+
+        </style>
+
+    <!--[if lt IE 7]>
+        <style type="text/css">
+            .post div.labels {
+                right: 450px;
+            }
+        </style>
+    <![endif]-->
+</head>
+
+<body>
+
+<div id="Content">
+
+	<div id="sidebar">
+		<p id="title"> <a href="/">{Title}</a> </p>
+		<l>
+			<li><a href="/ask" onClick="javascript: pageTracker._trackPageview('/me/ask');" title="Ask me something"><span>Ask me anything</span></a></li>
+			<li>{Description}</li>
+		</l>
+	
+	</div>
+	<!-- end sidebar / begin content -->
+	<div id="posts">
+		<!-- Search Page -->
+		{block:SearchPage}
+			<p class="post">
+			<span id="searchtitle">
+				Search for <a href="/search/{URLSafeSearchQuery}">{SearchQuery}</a> returned {SearchResultCount} results
+			</span>
+		</p>
+		{/block:SearchPage}
+	
+		<!-- Posts -->
+		{block:Posts}
+		<div class="post">
+			{block:Text}
+		      {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+		      <div>{Body}</div>
+			{/block:Text}
+			{block:Quote}
+		      <p>"{Quote}"</p>
+		      {block:Source}<div class="who">- {Source}</div>{/block:Source}
+			{/block:Quote}
+			{block:Photo}
+		      <p>{LinkOpenTag}<img class="halo" src="{PhotoURL-HighRes}" alt="{PhotoAlt} | Primitive Machine" title="{PhotoAlt} | John Elliott" />{LinkCloseTag}</p>
+		      {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+			{/block:Photo}
+			{block:Link}
+		      <h2><a href="{URL}" {Target}>{Name}</a></h2>
+		      {block:Description}<div>{Description}</div>{/block:Description}
+			{/block:Link}
+			{block:Chat}
+		      {block:Title}<h2>{Title}</h2>{/block:Title}
+		      <table cellspacing="0" cellpadding="0" border="0">
+		      {block:Lines}
+		      <tr><td class="label">{block:Label}{Label}{/block:Label}</td><td class="line">{Line}</td></tr>
+		      {/block:Lines}
+		      </table>
+			{/block:Chat}
+			{block:Video}
+		      <p>{Video-500}</p>
+		      {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+			{/block:Video}
+			{block:Audio}
+		      <p>{AudioPlayer#fff}</p>
+		      {block:Caption}<div class="caption">{Caption} ({FormattedPlayCount} plays)</div>{/block:Caption}
+			{/block:Audio}
+	
+		<!-- Index page -->	
+		{block:IndexPage}
+			<p id="pageperm">
+				<span><a href="{Permalink}">&#8734; {MonthNumber}/{DayOfMonth}</a></span>
+			</p>
+		{/block:IndexPage}	
+		
+		<!-- Permalink Page additions -->	
+			{block:PermalinkPage}
+				<div id="permalinkblock">	
+					<p><a href="{Permalink}">&#8734; link to this page</a>{block:HasTags} {block:Tags}<a href="{TagURL}">{Tag} </a>{/block:Tags}{/block:HasTags}</p>
+					{block:PostNotes}
+						<p>notes:{PostNotes}</p>
+					{/block:PostNotes}
+				</div> 
+			{/block:PermalinkPage}
+	
+	</div>
+	{/block:Posts}
+	
+	<!-- Footer -->
+		<div id="footer">	
+			{block:Pagination}
+				<div class="PaginationBig">
+					{block:PreviousPage}<a href="{PreviousPage}">&#8592; Newer</a><span>&nbsp;&nbsp;</span>{/block:PreviousPage}
+					{block:NextPage}<a href="{NextPage}">Older &#8594;</a>{/block:NextPage}
+				</div>
+			{/block:Pagination}
+			
+			{block:DayPagination}
+				<div class="PaginationBig">
+				   {block:PreviousDayPage}<a href="{PreviousDayPage}" >&#171; Previous Day</a><span>&nbsp;&nbsp;</span>{/block:PreviousDayPage}
+				   {block:NextDayPage}<a href="{NextDayPage}">Next Day &#187;</a>{/block:NextDayPage}
+				</div>
+			{/block:DayPagination}
+		</div>
+	</div>
+</div>
+<!-- GA  -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4213002-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<!-- /GA -->
+
+</body>
+</html>
